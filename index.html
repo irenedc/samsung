@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Actividad con HTML</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<form id="createAccountForm" novalidate>
+  <h1>Create Account</h1>
+  <label>Nombre</label>
+  <div class="input-wrapper">
+    <input type="text" name="name" maxlength="30" value="" required />
+  </div>
+  <label>Email</label>
+  <div class="input-wrapper">
+    <input type="email" name="email" maxlength="60" pattern="^\S+@\S+\.\S+$" required />
+  </div>
+  <label>Clave</label>
+  <div class="input-wrapper">
+    <input type="password" name="password" pattern="[^ ]{1,8}" required />
+  </div>
+  <label>Confirmar clave</label>
+  <div class="input-wrapper">
+    <input type="password" name="password_confirm" required />
+  </div>
+  <button class="form-button" type="submit">Enviar</button>
+</form>
+
+<script src="./index.js"></script>
+</body>
+</html>
